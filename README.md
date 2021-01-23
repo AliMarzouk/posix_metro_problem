@@ -1,4 +1,5 @@
-# Projet Systèmes temps réel 
+# Projet Systèmes temps réel par Ali Marzouk & Hazem Ben Hassine
+# Encadré par Madame Olfa Mosbahi
 ## Objectif du travail 
 Ce projet consiste à gérer les lignes de metro d'un réseau sous terrain sous deux contraintes differentes.
 Dans le premier dossier TP1 nous avons traité le cas de 3 métros et 6 stations sous les contraintes suivantes:
