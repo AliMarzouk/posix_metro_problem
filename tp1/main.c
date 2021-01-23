@@ -34,19 +34,19 @@ void* Metro1(void* arg) {
     pthread_mutex_lock(&segment_ab);
     printf("thread %d: Metro 1 occupe le segment AB\n",pid);
     occupySegment();
-    printf("AB vide\n");
+    printf("AB Segment Libre\n");
     pthread_mutex_unlock(&segment_ab);
 
     pthread_mutex_lock(&segment_bc);
     printf("thread %d: Metro 1 occupe le segment BC\n",pid);
     occupySegment();
-    printf("BC vidée\n");
+    printf("BC Segment Libre\n");
     pthread_mutex_unlock(&segment_bc);
 
     pthread_mutex_lock(&segment_cd);
     printf("thread %d: Metro 1 occupe le segment CD\n",pid);
     occupySegment();
-    printf("CD vide\n");
+    printf("CD Segment Libre\n");
     pthread_mutex_unlock(&segment_cd);
 
     printf("thread %d: Metro 1 arrive a la station D!\n",pid);
@@ -61,13 +61,13 @@ void* Metro2(void* arg) {
     pthread_mutex_lock(&segment_ce);
     printf("thread %d: Metro 2 occupe le segment EC\n",pid);
     occupySegment();
-    printf("CE vide\n");
+    printf("CE Segment Libre\n");
     pthread_mutex_unlock(&segment_ce);
 
     pthread_mutex_lock(&segment_bc);
     printf("thread %d: Metro 2 occupe le segment CB\n",pid);
     occupySegment();
-    printf("BC vide\n");
+    printf("BC Segment Libre\n");
     pthread_mutex_unlock(&segment_bc);
 
     printf("thread %d: Metro 2 arrive a la station B !\n",pid);
@@ -82,13 +82,13 @@ void* Metro3(void* arg) {
     pthread_mutex_lock(&segment_bf);
     printf("thread %d: Metro 3 occupe le segment FB\n",pid);
     occupySegment();
-    printf("BF vide\n");
+    printf("BF Segment Libre\n");
     pthread_mutex_unlock(&segment_bf);
 
     pthread_mutex_lock(&segment_ab);
     printf("thread %d: Metro 3 occupe le segment BA\n",pid);
     occupySegment();
-    printf("AB vide\n");
+    printf("AB Segment Libre\n");
     pthread_mutex_unlock(&segment_ab);
 
     printf("thread %d: Metro 3 arrive a la station  A !\n",pid);
