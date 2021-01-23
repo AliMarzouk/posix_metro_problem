@@ -32,24 +32,24 @@ void* Metro1(void* arg) {
     int pid=*((int*)arg);
 
     pthread_mutex_lock(&segment_ab);
-    printf("thread %d: Metro 1 occupe le segment AB\n",pid);
+    printf("metro num: %d de la ligne  1 occupe le segment AB\n",pid);
     occupySegment();
     printf("AB Segment Libre\n");
     pthread_mutex_unlock(&segment_ab);
 
     pthread_mutex_lock(&segment_bc);
-    printf("thread %d: Metro 1 occupe le segment BC\n",pid);
+    printf("metro num: %d de la ligne  1 occupe le segment BC\n",pid);
     occupySegment();
     printf("BC Segment Libre\n");
     pthread_mutex_unlock(&segment_bc);
 
     pthread_mutex_lock(&segment_cd);
-    printf("thread %d: Metro 1 occupe le segment CD\n",pid);
+    printf("metro num: %d de la ligne  1 occupe le segment CD\n",pid);
     occupySegment();
     printf("CD Segment Libre\n");
     pthread_mutex_unlock(&segment_cd);
 
-    printf("thread %d: Metro 1 arrive a la station D!\n",pid);
+    printf("metro num: %d de la ligne  1 arrive a la station D!\n",pid);
 
     pthread_exit(NULL);
 }
@@ -59,18 +59,18 @@ void* Metro2(void* arg) {
     int pid=*((int*)arg);
 
     pthread_mutex_lock(&segment_ce);
-    printf("thread %d: Metro 2 occupe le segment EC\n",pid);
+    printf("metro num: %d de la ligne  2 occupe le segment EC\n",pid);
     occupySegment();
     printf("CE Segment Libre\n");
     pthread_mutex_unlock(&segment_ce);
 
     pthread_mutex_lock(&segment_bc);
-    printf("thread %d: Metro 2 occupe le segment CB\n",pid);
+    printf("metro num: %d de la ligne  2 occupe le segment CB\n",pid);
     occupySegment();
     printf("BC Segment Libre\n");
     pthread_mutex_unlock(&segment_bc);
 
-    printf("thread %d: Metro 2 arrive a la station B !\n",pid);
+    printf("metro num: %d de la ligne  2 arrive a la station B !\n",pid);
 
     pthread_exit(NULL);
 }
@@ -80,18 +80,18 @@ void* Metro3(void* arg) {
     int pid=*((int*)arg);
 
     pthread_mutex_lock(&segment_bf);
-    printf("thread %d: Metro 3 occupe le segment FB\n",pid);
+    printf("metro num: %d de la ligne  3 occupe le segment FB\n",pid);
     occupySegment();
     printf("BF Segment Libre\n");
     pthread_mutex_unlock(&segment_bf);
 
     pthread_mutex_lock(&segment_ab);
-    printf("thread %d: Metro 3 occupe le segment BA\n",pid);
+    printf("metro num: %d de la ligne  3 occupe le segment BA\n",pid);
     occupySegment();
     printf("AB Segment Libre\n");
     pthread_mutex_unlock(&segment_ab);
 
-    printf("thread %d: Metro 3 arrive a la station  A !\n",pid);
+    printf("metro num: %d de la ligne  3 arrive a la station  A !\n",pid);
 
     pthread_exit(NULL);
 }
@@ -102,7 +102,13 @@ int main()
 {
     int i;
     pthread_t id;
-
+    
+    pthread_mutex_init(&segment_ab, NULL);
+    pthread_mutex_init(&segment_bc, NULL);
+    pthread_mutex_init(&segment_ce, NULL);
+    pthread_mutex_init(&segment_cd, NULL);
+    pthread_mutex_init(&segment_bf, NULL);
+  
     for(i=0; i<3;i++)
     {
         int* j=(int*)malloc(sizeof(int));
