@@ -48,37 +48,37 @@ void* Metro1(void* arg) {
     pthread_mutex_lock(&segment_ap);
     printf("thread %d: Metro 1 occupe le segment AP\n",pid);
     occupySegment();
-    printf("AP vide\n");
+    printf("AP Segment Libre\n");
     pthread_mutex_unlock(&segment_ap);
 
     pthread_mutex_lock(&segment_pl);
     printf("thread %d: Metro 1 occupe le segment PL\n",pid);
     occupySegment();
-    printf("PL vidée\n");
+    printf("PL  Segment Libre\n");
     pthread_mutex_unlock(&segment_pl);
 
     pthread_mutex_lock(&segment_lg);
     printf("thread %d: Metro 1 occupe le segment LG\n",pid);
     occupySegment();
-    printf("LG vide\n");
+    printf("LG Segment Libre\n");
     pthread_mutex_unlock(&segment_lg);
 
     pthread_mutex_lock(&segment_gm);
     printf("thread %d: Metro 1 occupe le segment GM\n",pid);
     occupySegment();
-    printf("GM vide\n");
+    printf("GM Segment Libre\n");
     pthread_mutex_unlock(&segment_gm);
 
     pthread_mutex_lock(&segment_mn);
     printf("thread %d: Metro 1 occupe le segment MN\n",pid);
     occupySegment();
-    printf("MN vide\n");
+    printf("MN Segment Libre\n");
     pthread_mutex_unlock(&segment_mn);
 
     pthread_mutex_lock(&segment_no);
     printf("thread %d: Metro 1 occupe le segment NO\n",pid);
     occupySegment();
-    printf("NO vide\n");
+    printf("NO Segment Libre\n");
     pthread_mutex_unlock(&segment_no);
 
     printf("thread %d: Metro 1 arrive a la station O!\n",pid);
@@ -93,49 +93,49 @@ void* Metro2(void* arg) {
     pthread_mutex_lock(&segment_bc);
     printf("thread %d: Metro 2 occupe le segment BC\n",pid);
     occupySegment();
-    printf("BC vide\n");
+    printf("BC Segment Libre\n");
     pthread_mutex_unlock(&segment_bc);
 
     pthread_mutex_lock(&segment_cf);
     printf("thread %d: Metro 2 occupe le segment CF\n",pid);
     occupySegment();
-    printf("CF vidée\n");
+    printf("CF Segment libre\n");
     pthread_mutex_unlock(&segment_cf);
 
     pthread_mutex_lock(&segment_fg);
     printf("thread %d: Metro 2 occupe le segment FG\n",pid);
     occupySegment();
-    printf("FG vide\n");
+    printf("FG Segment Libre\n");
     pthread_mutex_unlock(&segment_fg);
 
     pthread_mutex_lock(&segment_gh);
     printf("thread %d: Metro 2 occupe le segment GH\n",pid);
     occupySegment();
-    printf("GH vide\n");
+    printf("GH Segment Libre\n");
     pthread_mutex_unlock(&segment_gh);
 
     pthread_mutex_lock(&segment_hi);
     printf("thread %d: Metro 2 occupe le segment HI\n",pid);
     occupySegment();
-    printf("HI vide\n");
+    printf("HI Segment Libre\n");
     pthread_mutex_unlock(&segment_hi);
 
     pthread_mutex_lock(&segment_ir);
     printf("thread %d: Metro 2 occupe le segment IR\n",pid);
     occupySegment();
-    printf("IR vide\n");
+    printf("IR Segment Libre\n");
     pthread_mutex_unlock(&segment_ir);
 
     pthread_mutex_lock(&segment_rs);
     printf("thread %d: Metro 2 occupe le segment RS\n",pid);
     occupySegment();
-    printf("RS vide\n");
+    printf("RS Segment Libre\n");
     pthread_mutex_unlock(&segment_rs);
 
     pthread_mutex_lock(&segment_st);
     printf("thread %d: Metro 2 occupe le segment ST\n",pid);
     occupySegment();
-    printf("ST vide\n");
+    printf("ST Segment Libre\n");
     pthread_mutex_unlock(&segment_st);
 
     printf("thread %d: Metro 2 arrive a la station T!\n",pid);
@@ -150,37 +150,37 @@ void* Metro3(void* arg) {
     pthread_mutex_lock(&segment_dc);
     printf("thread %d: Metro 3 occupe le segment DC\n",pid);
     occupySegment();
-    printf("DC vide\n");
+    printf("DC Segment Libre\n");
     pthread_mutex_unlock(&segment_dc);
 
     pthread_mutex_lock(&segment_cf);
     printf("thread %d: Metro 3 occupe le segment CF\n",pid);
     occupySegment();
-    printf("CF vidée\n");
+    printf("CF  Segment Libre\n");
     pthread_mutex_unlock(&segment_cf);
 
     pthread_mutex_lock(&segment_fg);
     printf("thread %d: Metro 3 occupe le segment FG\n",pid);
     occupySegment();
-    printf("FG vide\n");
+    printf("FG Segment Libre\n");
     pthread_mutex_unlock(&segment_fg);
 
     pthread_mutex_lock(&segment_lg);
     printf("thread %d: Metro 3 occupe le segment GL\n",pid);
     occupySegment();
-    printf("GL vide\n");
+    printf("GL Segment Libre\n");
     pthread_mutex_unlock(&segment_lg);
 
     pthread_mutex_lock(&segment_pl);
     printf("thread %d: Metro 3 occupe le segment LP\n",pid);
     occupySegment();
-    printf("LP vide\n");
+    printf("LP Segment Libre\n");
     pthread_mutex_unlock(&segment_pl);
 
     pthread_mutex_lock(&segment_pk);
     printf("thread %d: Metro 3 occupe le segment PK\n",pid);
     occupySegment();
-    printf("PK vide\n");
+    printf("PK Segment Libre\n");
     pthread_mutex_unlock(&segment_pk);
 
     printf("thread %d: Metro 3 arrive a la station K!\n",pid);
@@ -195,31 +195,31 @@ void* Metro4(void* arg) {
     pthread_mutex_lock(&segment_ef);
     printf("thread %d: Metro 4 occupe le segment EF\n",pid);
     occupySegment();
-    printf("EF vide\n");
+    printf("EF Segment Libre\n");
     pthread_mutex_unlock(&segment_ef);
 
     pthread_mutex_lock(&segment_fg);
     printf("thread %d: Metro 4 occupe le segment FG\n",pid);
     occupySegment();
-    printf("FG vide\n");
+    printf("FG Segment Libre\n");
     pthread_mutex_unlock(&segment_fg);
 
     pthread_mutex_lock(&segment_gh);
     printf("thread %d: Metro 4 occupe le segment GH\n",pid);
     occupySegment();
-    printf("GH vide\n");
+    printf("GH Segment Libre\n");
     pthread_mutex_unlock(&segment_gh);
 
     pthread_mutex_lock(&segment_hi);
     printf("thread %d: Metro 4 occupe le segment HI\n",pid);
     occupySegment();
-    printf("HI vide\n");
+    printf("HI Segment Libre\n");
     pthread_mutex_unlock(&segment_hi);
 
     pthread_mutex_lock(&segment_ij);
     printf("thread %d: Metro 4 occupe le segment IJ\n",pid);
     occupySegment();
-    printf("IJ vide\n");
+    printf("IJ Segment Libre\n");
     pthread_mutex_unlock(&segment_ij);
 
     printf("thread %d: Metro 4 arrive a la station J!\n",pid);
@@ -234,49 +234,49 @@ void* Metro5(void* arg) {
     pthread_mutex_lock(&segment_qn);
     printf("thread %d: Metro 5 occupe le segment QN\n",pid);
     occupySegment();
-    printf("QN vide\n");
+    printf("QN Segment Libre\n");
     pthread_mutex_unlock(&segment_qn);
 
     pthread_mutex_lock(&segment_mn);
     printf("thread %d: Metro 5 occupe le segment NM\n",pid);
     occupySegment();
-    printf("NM vidée\n");
+    printf("NM  Segment Libre\n");
     pthread_mutex_unlock(&segment_mn);
 
     pthread_mutex_lock(&segment_gm);
     printf("thread %d: Metro 5 occupe le segment MG\n",pid);
     occupySegment();
-    printf("MG vide\n");
+    printf("MG Segment Libre\n");
     pthread_mutex_unlock(&segment_gm);
 
     pthread_mutex_lock(&segment_gh);
     printf("thread %d: Metro 5 occupe le segment GH\n",pid);
     occupySegment();
-    printf("GH vide\n");
+    printf("GH Segment Libre\n");
     pthread_mutex_unlock(&segment_gh);
 
     pthread_mutex_lock(&segment_hi);
     printf("thread %d: Metro 5 occupe le segment HI\n",pid);
     occupySegment();
-    printf("HI vide\n");
+    printf("HI Segment Libre\n");
     pthread_mutex_unlock(&segment_hi);
 
     pthread_mutex_lock(&segment_ir);
     printf("thread %d: Metro 5 occupe le segment IR\n",pid);
     occupySegment();
-    printf("IR vide\n");
+    printf("IR Segment Libre\n");
     pthread_mutex_unlock(&segment_ir);
 
     pthread_mutex_lock(&segment_rs);
     printf("thread %d: Metro 5 occupe le segment RS\n",pid);
     occupySegment();
-    printf("RS vide\n");
+    printf("RS Segment Libre\n");
     pthread_mutex_unlock(&segment_rs);
 
     pthread_mutex_lock(&segment_su);
     printf("thread %d: Metro 5 occupe le segment SU\n",pid);
     occupySegment();
-    printf("SU vide\n");
+    printf("SU Segment Libre\n");
     pthread_mutex_unlock(&segment_su);
 
     printf("thread %d: Metro 5 arrive a la station U!\n",pid);
